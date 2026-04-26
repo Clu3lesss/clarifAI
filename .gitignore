@@ -1,0 +1,8 @@
+node_modules/
+venv/
+.env
+dist/
+build/
+.DS_Store
+heatmaps/
+__pycache__/

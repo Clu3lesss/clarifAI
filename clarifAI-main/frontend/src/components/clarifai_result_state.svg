@@ -1,0 +1,235 @@
+<svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+
+  <!-- Overall background -->
+  <rect width="1200" height="760" fill="#09090B"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="220" height="760" fill="#18181B"/>
+  <line x1="220" y1="0" x2="220" y2="760" stroke="#27272A" stroke-width="1"/>
+
+  <!-- Logo -->
+  <text x="28" y="46" font-size="22" font-weight="600" fill="#F4F4F5" letter-spacing="-0.5">Clarif</text>
+  <text x="88" y="46" font-size="22" font-weight="600" fill="#60A5FA" letter-spacing="-0.5">AI</text>
+  <line x1="0" y1="62" x2="220" y2="62" stroke="#27272A" stroke-width="1"/>
+
+  <!-- Sidebar nav items -->
+  <text x="28" y="100" font-size="14" fill="#71717A">📊  Dashboard</text>
+  <!-- Analyse active -->
+  <rect x="0" y="110" width="220" height="36" fill="#27272A"/>
+  <rect x="0" y="110" width="3" height="36" fill="#60A5FA"/>
+  <text x="28" y="133" font-size="14" font-weight="600" fill="#60A5FA">🔍  Analyse</text>
+  <text x="28" y="166" font-size="14" fill="#71717A">📁  History</text>
+  <text x="28" y="198" font-size="14" fill="#71717A">🔑  API Keys</text>
+  <text x="28" y="230" font-size="14" fill="#71717A">📄  Reports</text>
+  <text x="28" y="730" font-size="14" fill="#71717A">⚙️  Settings</text>
+
+  <!-- Main content area -->
+  <!-- Top bar -->
+  <rect x="220" y="0" width="980" height="62" fill="#18181B"/>
+  <line x1="220" y1="62" x2="1200" y2="62" stroke="#27272A" stroke-width="1"/>
+
+  <!-- Back button -->
+  <rect x="240" y="16" width="150" height="30" rx="8" fill="transparent" stroke="#3F3F46" stroke-width="1"/>
+  <text x="265" y="35" font-size="13" fill="#A1A1AA">← New analysis</text>
+
+  <!-- Page title -->
+  <text x="404" y="35" font-size="16" font-weight="600" fill="#F4F4F5">Result — profile_photo.jpg</text>
+
+  <!-- Top right actions -->
+  <rect x="968" y="16" width="120" height="30" rx="8" fill="transparent" stroke="#3F3F46" stroke-width="1"/>
+  <text x="1003" y="35" font-size="13" fill="#D4D4D8" text-anchor="middle" x="1028">Save to reports</text>
+  <text x="1028" y="35" font-size="13" fill="#D4D4D8" text-anchor="middle">Save to reports</text>
+
+  <rect x="1100" y="16" width="82" height="30" rx="8" fill="#2563EB"/>
+  <text x="1141" y="35" font-size="13" font-weight="600" fill="#EFF6FF" text-anchor="middle">Download PDF</text>
+
+  <!-- ===================== LEFT PANEL — Heatmap ===================== -->
+  <rect x="240" y="80" width="460" height="360" rx="12" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+
+  <!-- Panel header -->
+  <text x="260" y="108" font-size="13" font-weight="600" fill="#F4F4F5">Grad-CAM heatmap</text>
+  <text x="260" y="126" font-size="11" fill="#71717A">Face-focused · MTCNN crop applied</text>
+
+  <!-- View toggle -->
+  <rect x="536" y="90" width="148" height="28" rx="7" fill="#27272A" stroke="#3F3F46" stroke-width="0.8"/>
+  <rect x="537" y="91" width="50" height="26" rx="6" fill="#2563EB"/>
+  <text x="562" y="108" font-size="11" font-weight="600" fill="#EFF6FF" text-anchor="middle">Heatmap</text>
+  <text x="618" y="108" font-size="11" fill="#71717A" text-anchor="middle">Original</text>
+  <text x="666" y="108" font-size="11" fill="#71717A" text-anchor="middle">Overlay</text>
+
+  <line x1="240" y1="136" x2="700" y2="136" stroke="#27272A" stroke-width="1"/>
+
+  <!-- Image area / heatmap visualization -->
+  <rect x="240" y="136" width="460" height="250" fill="#27272A"/>
+
+  <!-- Simulated face silhouette -->
+  <ellipse cx="470" cy="230" rx="60" ry="72" fill="#3F3F46" opacity="0.8"/>
+  <ellipse cx="470" cy="310" rx="90" ry="45" fill="#3F3F46" opacity="0.5"/>
+
+  <!-- Heatmap blobs — red/orange zones -->
+  <ellipse cx="470" cy="200" rx="38" ry="32" fill="#EF4444" opacity="0.45"/>
+  <ellipse cx="452" cy="235" rx="28" ry="22" fill="#F97316" opacity="0.38"/>
+  <ellipse cx="490" cy="232" rx="24" ry="20" fill="#F97316" opacity="0.32"/>
+  <ellipse cx="470" cy="262" rx="30" ry="22" fill="#EF4444" opacity="0.28"/>
+  <ellipse cx="438" cy="215" rx="18" ry="14" fill="#EF4444" opacity="0.55"/>
+  <ellipse cx="504" cy="212" rx="16" ry="13" fill="#EF4444" opacity="0.50"/>
+  <!-- cooler zones -->
+  <ellipse cx="455" cy="178" rx="20" ry="14" fill="#22C55E" opacity="0.2"/>
+  <ellipse cx="488" cy="176" rx="18" ry="13" fill="#22C55E" opacity="0.18"/>
+
+  <!-- Face bounding box -->
+  <rect x="420" y="152" width="100" height="126" rx="4" fill="none" stroke="#EF4444" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- Face label -->
+  <rect x="438" y="141" width="64" height="18" rx="4" fill="#EF4444"/>
+  <text x="470" y="153" font-size="10" font-weight="600" fill="#FEF2F2" text-anchor="middle">Face detected</text>
+
+  <!-- Hotspot markers -->
+  <circle cx="455" cy="210" r="5" fill="none" stroke="#EF4444" stroke-width="1.5"/>
+  <circle cx="488" cy="207" r="5" fill="none" stroke="#EF4444" stroke-width="1.5"/>
+  <circle cx="470" cy="248" r="5" fill="none" stroke="#F97316" stroke-width="1.5"/>
+
+  <!-- Filename watermark -->
+  <text x="470" y="375" font-size="11" fill="#52525B" text-anchor="middle">face_region_224×224.jpg</text>
+
+  <!-- Legend -->
+  <rect x="240" y="386" width="460" height="28" fill="#1C1C1F"/>
+  <circle cx="265" cy="400" r="5" fill="#EF4444"/>
+  <text x="276" y="404" font-size="11" fill="#A1A1AA">High suspicion</text>
+  <circle cx="370" cy="400" r="5" fill="#F97316"/>
+  <text x="381" y="404" font-size="11" fill="#A1A1AA">Medium suspicion</text>
+  <circle cx="490" cy="400" r="5" fill="#22C55E"/>
+  <text x="501" y="404" font-size="11" fill="#A1A1AA">Low / authentic</text>
+
+  <!-- Image footer -->
+  <line x1="240" y1="414" x2="700" y2="414" stroke="#27272A" stroke-width="1"/>
+  <text x="260" y="432" font-size="11" fill="#52525B">profile_photo.jpg · 2.4 MB · 1024×1024px</text>
+  <text x="672" y="432" font-size="11" fill="#3B82F6" text-anchor="end">Download heatmap PNG</text>
+
+  <!-- ===================== RIGHT PANEL — Score ===================== -->
+  <rect x="718" y="80" width="462" height="360" rx="12" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+
+  <!-- Verdict banner -->
+  <rect x="738" y="98" width="422" height="44" rx="8" fill="#1C0A0A" stroke="#7F1D1D" stroke-width="1"/>
+  <circle cx="762" cy="120" r="6" fill="#EF4444"/>
+  <text x="778" y="124" font-size="15" font-weight="600" fill="#F87171">Likely deepfake</text>
+  <text x="1138" y="124" font-size="12" fill="#EF4444" text-anchor="end">High confidence</text>
+
+  <!-- Score -->
+  <text x="738" y="176" font-size="11" fill="#71717A">Deepfake confidence score</text>
+  <text x="738" y="218" font-size="52" font-weight="700" fill="#EF4444" letter-spacing="-2">82</text>
+  <text x="802" y="218" font-size="22" fill="#7F1D1D"> / 100</text>
+
+  <!-- Score bar -->
+  <rect x="738" y="228" width="422" height="8" rx="4" fill="#27272A"/>
+  <rect x="738" y="228" width="346" height="8" rx="4" fill="#EF4444"/>
+
+  <!-- Bar ticks -->
+  <text x="738" y="248" font-size="10" fill="#3F3F46">0</text>
+  <text x="840" y="248" font-size="10" fill="#3F3F46">25</text>
+  <text x="943" y="248" font-size="10" fill="#3F3F46">50</text>
+  <text x="1045" y="248" font-size="10" fill="#3F3F46">75</text>
+  <text x="1152" y="248" font-size="10" fill="#3F3F46">100</text>
+
+  <!-- Pill rows -->
+  <!-- Risk level -->
+  <rect x="738" y="258" width="422" height="36" rx="8" fill="#27272A"/>
+  <text x="758" y="281" font-size="13" fill="#A1A1AA">Risk level</text>
+  <rect x="1080" y="265" width="62" height="22" rx="11" fill="#450A0A"/>
+  <text x="1111" y="280" font-size="11" font-weight="600" fill="#F87171" text-anchor="middle">High</text>
+
+  <!-- Face detected -->
+  <rect x="738" y="302" width="422" height="36" rx="8" fill="#27272A"/>
+  <text x="758" y="325" font-size="13" fill="#A1A1AA">Face detected</text>
+  <rect x="1040" y="309" width="102" height="22" rx="11" fill="#052E16"/>
+  <text x="1091" y="324" font-size="11" font-weight="600" fill="#4ADE80" text-anchor="middle">Yes — 1 face</text>
+
+  <!-- Detection mode -->
+  <rect x="738" y="346" width="422" height="36" rx="8" fill="#27272A"/>
+  <text x="758" y="369" font-size="13" fill="#A1A1AA">Detection mode</text>
+  <rect x="1055" y="353" width="87" height="22" rx="11" fill="#18181B" stroke="#3F3F46" stroke-width="1"/>
+  <text x="1098" y="368" font-size="11" fill="#D4D4D8" text-anchor="middle">Face-focused</text>
+
+  <!-- Model -->
+  <rect x="738" y="390" width="422" height="36" rx="8" fill="#27272A"/>
+  <text x="758" y="413" font-size="13" fill="#A1A1AA">Model</text>
+  <rect x="1043" y="397" width="99" height="22" rx="11" fill="#18181B" stroke="#3F3F46" stroke-width="1"/>
+  <text x="1092" y="412" font-size="11" fill="#D4D4D8" text-anchor="middle">EfficientNet-B4</text>
+
+  <!-- Detection time -->
+  <rect x="738" y="434" width="206" height="36" rx="8" fill="#27272A"/>
+  <text x="758" y="457" font-size="13" fill="#A1A1AA">Detection time</text>
+
+  <!-- Report ID -->
+  <rect x="952" y="434" width="208" height="36" rx="8" fill="#27272A"/>
+  <text x="972" y="457" font-size="13" fill="#A1A1AA">Report ID</text>
+
+  <!-- Values for small pills -->
+  <text x="900" y="457" font-size="12" font-weight="500" fill="#D4D4D8">2.1 s</text>
+  <text x="1090" y="457" font-size="12" font-weight="500" fill="#D4D4D8">#R-00412</text>
+
+  <!-- ===================== FINDINGS SECTION ===================== -->
+  <!-- Tabs -->
+  <rect x="240" y="456" width="940" height="1" fill="#27272A"/>
+  <text x="260" y="488" font-size="14" font-weight="600" fill="#60A5FA">Findings</text>
+  <line x1="258" y1="494" x2="310" y2="494" stroke="#3B82F6" stroke-width="2"/>
+  <text x="330" y="488" font-size="14" fill="#52525B">Raw JSON</text>
+  <text x="410" y="488" font-size="14" fill="#52525B">Model info</text>
+  <line x1="240" y1="496" x2="1180" y2="496" stroke="#27272A" stroke-width="1"/>
+
+  <!-- Detail cards row -->
+  <!-- Card 1 -->
+  <rect x="240" y="508" width="295" height="120" rx="10" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+  <text x="260" y="533" font-size="10" font-weight="600" fill="#71717A" letter-spacing="0.6">ARTIFACTS DETECTED</text>
+  <text x="260" y="555" font-size="12" fill="#A1A1AA">Blending seams along jawline</text>
+  <text x="260" y="572" font-size="12" fill="#A1A1AA">and left ear. Irregular skin</text>
+  <text x="260" y="589" font-size="12" fill="#A1A1AA">texture near hairline.</text>
+  <rect x="260" y="600" width="110" height="18" rx="9" fill="#450A0A"/>
+  <text x="315" y="612" font-size="10" font-weight="600" fill="#F87171" text-anchor="middle">Jawline · Ear · Hairline</text>
+
+  <!-- Card 2 -->
+  <rect x="547" y="508" width="295" height="120" rx="10" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+  <text x="567" y="533" font-size="10" font-weight="600" fill="#71717A" letter-spacing="0.6">HEATMAP HOTSPOTS</text>
+  <text x="567" y="555" font-size="12" fill="#A1A1AA">Grad-CAM highlights nose</text>
+  <text x="567" y="572" font-size="12" fill="#A1A1AA">bridge, left cheek, and chin</text>
+  <text x="567" y="589" font-size="12" fill="#A1A1AA">as highest-suspicion zones.</text>
+  <rect x="567" y="600" width="118" height="18" rx="9" fill="#450A0A"/>
+  <text x="626" y="612" font-size="10" font-weight="600" fill="#F87171" text-anchor="middle">Nose · Left cheek · Chin</text>
+
+  <!-- Card 3 -->
+  <rect x="854" y="508" width="326" height="120" rx="10" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+  <text x="874" y="533" font-size="10" font-weight="600" fill="#71717A" letter-spacing="0.6">DATASET SIMILARITY</text>
+  <text x="874" y="555" font-size="12" fill="#A1A1AA">Pattern matches FF++ Face2Face</text>
+  <text x="874" y="572" font-size="12" fill="#A1A1AA">and DeepFaceLab manipulation</text>
+  <text x="874" y="589" font-size="12" fill="#A1A1AA">categories from training data.</text>
+  <rect x="874" y="600" width="110" height="18" rx="9" fill="#450A0A"/>
+  <text x="929" y="612" font-size="10" font-weight="600" fill="#F87171" text-anchor="middle">FF++ · DeepFaceLab</text>
+
+  <!-- Card 4 -->
+  <rect x="240" y="638" width="295" height="104" rx="10" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+  <text x="260" y="661" font-size="10" font-weight="600" fill="#71717A" letter-spacing="0.6">EYE REGION</text>
+  <text x="260" y="681" font-size="12" fill="#A1A1AA">Eye area shows low heatmap</text>
+  <text x="260" y="698" font-size="12" fill="#A1A1AA">activation — blink pattern and</text>
+  <text x="260" y="715" font-size="12" fill="#A1A1AA">iris texture appear authentic.</text>
+  <rect x="260" y="726" width="96" height="18" rx="9" fill="#052E16"/>
+  <text x="308" y="738" font-size="10" font-weight="600" fill="#4ADE80" text-anchor="middle">Likely authentic</text>
+
+  <!-- Card 5 -->
+  <rect x="547" y="638" width="295" height="104" rx="10" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+  <text x="567" y="661" font-size="10" font-weight="600" fill="#71717A" letter-spacing="0.6">FACE GEOMETRY</text>
+  <text x="567" y="681" font-size="12" fill="#A1A1AA">MTCNN detected minor facial</text>
+  <text x="567" y="698" font-size="12" fill="#A1A1AA">midpoint asymmetry — common</text>
+  <text x="567" y="715" font-size="12" fill="#A1A1AA">in face-swap synthesis pipelines.</text>
+  <rect x="567" y="726" width="110" height="18" rx="9" fill="#450A0A"/>
+  <text x="622" y="738" font-size="10" font-weight="600" fill="#F87171" text-anchor="middle">Asymmetry flagged</text>
+
+  <!-- Card 6 -->
+  <rect x="854" y="638" width="326" height="104" rx="10" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+  <text x="874" y="661" font-size="10" font-weight="600" fill="#71717A" letter-spacing="0.6">CONFIDENCE BREAKDOWN</text>
+  <text x="874" y="681" font-size="12" fill="#A1A1AA">Softmax: P(fake) = 0.82,</text>
+  <text x="874" y="698" font-size="12" fill="#A1A1AA">P(real) = 0.18. Score above</text>
+  <text x="874" y="715" font-size="12" fill="#A1A1AA">0.70 triggers High risk flag.</text>
+  <rect x="874" y="726" width="80" height="18" rx="9" fill="#450A0A"/>
+  <text x="914" y="738" font-size="10" font-weight="600" fill="#F87171" text-anchor="middle">P(fake) 0.82</text>
+
+</svg>
